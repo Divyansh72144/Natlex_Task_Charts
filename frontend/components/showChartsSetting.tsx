@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import EditChartForm from './editChart'; 
-import DateRangeFilter from './rangeFilter';
 import chartServices from '../services/chartServices';
 import DeleteChart from './deleteChart'; 
 import { useSelector,useDispatch } from 'react-redux';
@@ -38,23 +37,6 @@ const ShowChartsSetting: React.FC = () => {
   }, []); 
 
 
-  const handleDateRangeChange = (startDate: Date|null, endDate: Date|null) => {
-    if (startDate && endDate) {
-      const filtered = allCharts.filter((chart :ChartData)=> {
-        const filteredData = chart.data.filter((_, index) => {
-          const date = new Date(chart.dates[index]);
-          return date >= startDate && date <= endDate;
-        });
-
-        return filteredData.length > 0; 
-      });
-
-      setFilteredCharts(filtered);
-    } else {
-      dispatch(getAllCharts(allCharts));
-    }
-  };
-
   const handleDeleteSuccess = () => {
     
     chartServices.getAll()
@@ -69,7 +51,6 @@ const ShowChartsSetting: React.FC = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '40px' }}>
-      {allCharts.length > 0 && <DateRangeFilter onDateRangeChange={handleDateRangeChange} />}
       {Array.isArray(filteredCharts) && filteredCharts.map((chartData, index) => (
         <div key={index} style={{ position: 'relative', margin: '20px', maxWidth: '100%' }}>
           <HighchartsReact
