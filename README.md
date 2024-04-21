@@ -23,7 +23,7 @@ Welcome to Natlex Chart Application, place for creating, editing, deleting and m
 
 * **Mongo db** Mongo database is used to store, fetch, edit and delete charts, helping the user to save their data for long. 
 
-* **Express and Node JS:** Used in bcakend for managing data flow between frontend and database
+* **Express and Node JS:** Used in backend for managing data flow between frontend and database
 
 * **React and Typescript** Used for creating Single Page Application
 
