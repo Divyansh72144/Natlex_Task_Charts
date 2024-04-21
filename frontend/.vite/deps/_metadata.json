@@ -1,0 +1,55 @@
+{
+  "hash": "3897c13d",
+  "configHash": "3e0ad7a3",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "e928fc96",
+  "optimized": {
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "5df1e8d1",
+      "needsInterop": false
+    },
+    "highcharts": {
+      "src": "../../node_modules/highcharts/highcharts.js",
+      "file": "highcharts.js",
+      "fileHash": "2e697603",
+      "needsInterop": true
+    },
+    "highcharts-react-official": {
+      "src": "../../node_modules/highcharts-react-official/dist/highcharts-react.min.js",
+      "file": "highcharts-react-official.js",
+      "fileHash": "c11e8ae9",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "6f64dfd6",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c79da7ca",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "cf2b7512",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PXJLUKTU": {
+      "file": "chunk-PXJLUKTU.js"
+    },
+    "chunk-FQO5W7GE": {
+      "file": "chunk-FQO5W7GE.js"
+    },
+    "chunk-ZS7NZCD4": {
+      "file": "chunk-ZS7NZCD4.js"
+    }
+  }
+}
