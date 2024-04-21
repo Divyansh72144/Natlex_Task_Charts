@@ -19,7 +19,7 @@ Welcome to Natlex Chart Application, place for creating, editing, deleting and m
 
 ## Tech Stack used
 
-* **Redux State Management** Redux used for state management of files such as in creating charts.
+* **Redux State Management** Redux used for state management of files.
 
 * **Mongo db** Mongo database is used to store, fetch, edit and delete charts, helping the user to save their data for long. 
 
